@@ -1,0 +1,13 @@
+{
+  "app_name": "网易云音乐解析工具",
+  "latest_version": "2.4",
+  "version_code": 20260203,
+  "release_date": "2026-02-03",
+  "download_url": "https://github.com/jigenb123/netease-music-releases/raw/main/网易云音乐解析工具_v2.4.zip",
+  "changelog": "v2.3 更新内容：\n1. 🔥 新增卡密验证系统，保护作者权益\n2. 🔄 新增自动更新功能，一键升级最新版\n3. 🎵 歌单解析增强 - 修复了只能解析前10首歌曲的问题\n4. 🔗 链接解析优化 - 支持直接解析网易云音乐链接格式\n5. 🎧 批量下载音质 - 批量下载现在支持完整的7种音质选择\n6. 📋 歌单专辑修复 - 修复了只能显示前十首歌曲的问题\n7. 🐛 其他Bug修复和性能优化",
+  "min_required_version": "2.0",
+  "file_size": 5242880,
+  "md5_checksum": "",
+  "important": true,
+  "force_update": false
+}
