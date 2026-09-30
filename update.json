@@ -1,9 +1,11 @@
-  "version": "4.6",
-  "date": "2026-09-30",
-  "asset_name": "网易云音乐解析工具_v4.6.exe",
-  "download_url": "https://d.pcs.baidu.com/file/e793b58fbvc3c828f662e8bc278a23ee?fid=1101341668119-250528-410689738057587&rt=pr&sign=FDtAERVK-DCb740ccc5511e5e8fedcff06b081203-lyHu92D7lmxfbp1LdGcawgxaWQE%3D&expires=8h&chkbd=0&chkv=3&dp-logid=3940379812701230470&dp-callid=0&dstime=1790783060&r=966380993&vuk=1101341668119&origin_appid=119209183&file_type=0&access_token=123.5cc6f6f013d98c9dd750d2bd9fd86784.YQqUTnXirY-mTPTo1ClJEFP76CP7kxAVSLYi-5-.bFscgg",
+{
+  "version": "4.7",
+  "date": "2026-10-01",
+  "asset_name": "网易云音乐解析工具_v4.7.exe",
+  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v4.7.exe",
   "page_url": "https://github.com/jigenb123/netease-music-updates/releases",
   "size": 0,
   "sha256": "",
   "mandatory": false,
-  "changelog": "- 修复了 xxx\n- 新增了 yyy"
+  "changelog": "v4.6 更新内容：\n\n1. 【新增】自动更新功能\n   - 程序启动后自动检测新版本（可在「设置 → 软件更新」中关闭）\n   - 也可随时点击「检查更新」手动检测\n2. 【新增】一键更新\n   - 检测到新版本后可直接在程序内下载并自动替换为新版，无需手动下载覆盖\n   - 下载完成后自动重启，更新过程无需手动干预\n3. 【新增】更新内容预览\n   - 更新前可查看新版本的更新日志，确认后再决定是否更新\n4. 【新增】可跳过指定版本\n   - 不想更新的版本可以选择「跳过此版本」，之后不再重复提示\n5. 【优化】安装包支持 sha256 校验，下载更安全\n6. 【优化】更新信息支持多通道（GitHub 直连 + CDN 加速），下载更稳定\n\n原有全部功能与行为保持不变。"
+}
