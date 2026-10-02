@@ -7,5 +7,5 @@
   "size": 45984351,
   "sha256": "3bcae6032a2784af5986de76e31d2152b4715874a105faf17934c18519806743",
   "mandatory": false,
-  "changelog": "v5.1 更新流程稳定性：① 修复更新完第一次启动报「no Qt platform plugin could be initialized」——新 exe 刚写进磁盘时杀毒软件常正在扫描，解压出来的运行文件可能不全；该错误由 Qt 直接 abort，Python 层拦不住，故改为创建 QApplication 前自检关键文件，缺了就自动重启自己一次，仍不行才弹可读提示；② apply_update_and_restart 改为先校验下载好的安装包再替换，文件损坏/被占用时保持原程序不变（此前先替换后校验，会把已装好的程序换坏），替换后停 1 秒再启动以避开杀毒扫描窗口。说明：旧版本退出时那句「Failed to remove temporary directory」是 PyInstaller 引导程序自带的提示，只影响观感、不影响功能。原有全部功能与行为保持不变"
+  "changelog": "v5.1修复报错"
 }
