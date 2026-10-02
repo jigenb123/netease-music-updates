@@ -1,11 +1,11 @@
 {
-  "version": "5.0",
+  "version": "5.1",
   "date": "2026-10-02",
-  "asset_name": "网易云音乐解析工具_v5.0.exe",
-  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v5.0.exe",
+  "asset_name": "网易云音乐解析工具_v5.1.exe",
+  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v5.1.exe",
   "page_url": "https://github.com/jigenb123/netease-music-updates/releases",
-  "size": 45979110,
-  "sha256": "857ee33b5fc541837be9f0332a90739bfe4c3e6125297427d27d66febcf82ddb",
+  "size": 45978980,
+  "sha256": "a604c379daca6c806e1fe30ae41ea07cba28a67086b1e490bf268f80ec6e0121",
   "mandatory": false,
-  "changelog": "v5.0 启动稳定性：① 修复打包版偶发「启动即崩」——报 FileNotFoundError: ...\\_MEIxxxx\\base_library.zip 或双击一闪而过。根因不是程序本身：onefile 每次启动都要把上百 MB 依赖解压到 %TEMP%\\_MEIxxxxx，过程中若被杀毒软件拦截、或被「垃圾清理」类工具（存储感知 / 电脑管家等）扫掉刚写进去的文件，就会在 import 阶段直接崩（只有被进程占用的 DLL 删不掉，所以残留目录里往往只剩 DLL）；现改为解压到 %LOCALAPPDATA%\\NeteaseMusicTool\\rt，这类清理工具不会再碰它；② 新增启动时清理上次被强杀留下的解压目录；③ 打包体积精简 44%（78.9MB → 43.8MB）：删掉三个项目根本没有引用的 hidden-import（qrcode / aiohttp / aiofiles），它们把 pydantic / yaml / tzdata / psutil / win32com / Pythonwin / pyreadline3 等一整棵无用依赖树拖了进来，解压量同步大降、启动更快；④ 启动失败时给出可读提示（弹窗说明原因并提示加白名单），不再是裸 traceback。原有全部功能与行为保持不变"
+  "changelog": "v5.1 更新内容：\n\n1. 【修复】更新完成后第一次启动可能报错打不开\n   - 现在会自动检测并重启一次，正常打开，不再需要你手动重开\n   - 万一还是不行，会给出一句能照着做的提示\n2. 【加固】更新过程更安全\n   - 安装包先校验再替换；文件有问题时保持原程序可用，不会把程序换坏\n\n原有全部功能与行为保持不变。"
 }
