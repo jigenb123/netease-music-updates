@@ -4,8 +4,8 @@
   "asset_name": "网易云音乐解析工具_v5.1.exe",
   "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v5.1.exe",
   "page_url": "https://github.com/jigenb123/netease-music-updates/releases",
-  "size": 45978980,
-  "sha256": "a604c379daca6c806e1fe30ae41ea07cba28a67086b1e490bf268f80ec6e0121",
+  "size": 45984351,
+  "sha256": "3bcae6032a2784af5986de76e31d2152b4715874a105faf17934c18519806743",
   "mandatory": false,
-  "changelog": "v5.1 更新内容：\n\n1. 【修复】更新完成后第一次启动可能报错打不开\n   - 现在会自动检测并重启一次，正常打开，不再需要你手动重开\n   - 万一还是不行，会给出一句能照着做的提示\n2. 【加固】更新过程更安全\n   - 安装包先校验再替换；文件有问题时保持原程序可用，不会把程序换坏\n\n原有全部功能与行为保持不变。"
+  "changelog": "v5.1 更新流程稳定性：① 修复更新完第一次启动报「no Qt platform plugin could be initialized」——新 exe 刚写进磁盘时杀毒软件常正在扫描，解压出来的运行文件可能不全；该错误由 Qt 直接 abort，Python 层拦不住，故改为创建 QApplication 前自检关键文件，缺了就自动重启自己一次，仍不行才弹可读提示；② apply_update_and_restart 改为先校验下载好的安装包再替换，文件损坏/被占用时保持原程序不变（此前先替换后校验，会把已装好的程序换坏），替换后停 1 秒再启动以避开杀毒扫描窗口。说明：旧版本退出时那句「Failed to remove temporary directory」是 PyInstaller 引导程序自带的提示，只影响观感、不影响功能。原有全部功能与行为保持不变"
 }
