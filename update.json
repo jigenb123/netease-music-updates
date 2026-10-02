@@ -1,11 +1,11 @@
 {
-  "version": "4.6",
-  "date": "2026-10-01",
-  "asset_name": "网易云音乐解析工具_v4.6",
-  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v4.6.exe",
+  "version": "4.7",
+  "date": "2026-10-02",
+  "asset_name": "网易云音乐解析工具_v4.7.exe",
+  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v4.7.exe",
   "page_url": "https://github.com/jigenb123/netease-music-updates/releases",
-  "size": 82711291,
-  "sha256": "3db8e8c53bc00ab701382dd7c04684b405570a546ec9f902eb5c14b6a6e11b6a",
+  "size": 82719625,
+  "sha256": "06bb56b3a4220662316e681c061948ce1db4813a6bc6c9bdc6312dfcfd51dfcb",
   "mandatory": false,
-  "changelog": "测试测试测试"
+  "changelog": "111"
 }
