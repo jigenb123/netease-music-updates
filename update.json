@@ -1,11 +1,11 @@
 {
-  "version": "4.9",
+  "version": "5.0",
   "date": "2026-10-02",
-  "asset_name": "网易云音乐解析工具_v4.9.exe",
-  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v4.9.exe",
+  "asset_name": "网易云音乐解析工具_v5.0.exe",
+  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v5.0.exe",
   "page_url": "https://github.com/jigenb123/netease-music-updates/releases",
-  "size": 82734962,
-  "sha256": "280283fb1aafb0c136682450f8677b1da53d70b4a73a033a1ac673fd38fbe690",
+  "size": 45978980,
+  "sha256": "a604c379daca6c806e1fe30ae41ea07cba28a67086b1e490bf268f80ec6e0121",
   "mandatory": false,
-  "changelog": "v4.9 修复：① 修复首次打开时「主题模式 = 跟随系统」不生效的问题——在没有配置文件的全新环境下，程序内部主题值停留在了浅色，而下拉框显示的是「跟随系统」，导致系统处于深色时界面依然按浅色渲染，并且这个错误值还会被写回配置文件；现在没有配置文件时显式套用默认主题（跟随系统）并同步下拉框，显示与行为始终一致；② 主题模式改为单一数据源，下拉框选项、索引映射与默认值全部由同一张表派生，不再手写下标，并统一了主题同步入口，从根本上杜绝「看到的」与「生效的」不一致；③ 兼容性：v4.1 之前只保存了 dark_mode 的老配置依旧原样沿用用户当年的选择，不会被改判成「跟随系统」。原有全部功能与行为保持不变"
+  "changelog": "v5.0 启动稳定性：① 修复打包版偶发「启动即崩」——报 FileNotFoundError: ...\\_MEIxxxx\\base_library.zip 或双击一闪而过。根因不是程序本身：onefile 每次启动都要把上百 MB 依赖解压到 %TEMP%\\_MEIxxxxx，过程中若被杀毒软件拦截、或被「垃圾清理」类工具（存储感知 / 电脑管家等）扫掉刚写进去的文件，就会在 import 阶段直接崩（只有被进程占用的 DLL 删不掉，所以残留目录里往往只剩 DLL）；现改为解压到 %LOCALAPPDATA%\\NeteaseMusicTool\\rt，这类清理工具不会再碰它；② 新增启动时清理上次被强杀留下的解压目录；③ 打包体积精简 44%（78.9MB → 43.8MB）：删掉三个项目根本没有引用的 hidden-import（qrcode / aiohttp / aiofiles），它们把 pydantic / yaml / tzdata / psutil / win32com / Pythonwin / pyreadline3 等一整棵无用依赖树拖了进来，解压量同步大降、启动更快；④ 启动失败时给出可读提示（弹窗说明原因并提示加白名单），不再是裸 traceback。原有全部功能与行为保持不变"
 }
