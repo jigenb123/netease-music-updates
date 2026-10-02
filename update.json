@@ -1,11 +1,11 @@
 {
-  "version": "4.7",
+  "version": "4.8",
   "date": "2026-10-02",
-  "asset_name": "网易云音乐解析工具_v4.7.exe",
-  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v4.7.exe",
+  "asset_name": "网易云音乐解析工具_v4.8.exe",
+  "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v4.8.exe",
   "page_url": "https://github.com/jigenb123/netease-music-updates/releases",
-  "size": 82719625,
-  "sha256": "06bb56b3a4220662316e681c061948ce1db4813a6bc6c9bdc6312dfcfd51dfcb",
+  "size": 82726896,
+  "sha256": "6ba64894264f53d235071c6c063406d810838121dd465b32f04eaee432aaa4bf",
   "mandatory": false,
-  "changelog": "111"
+  "changelog": "v4.8：日志安全性增强，降低日志内容被随意查看的风险；「软件更新」页文案改为「启动时自动检查更新：已开启」。原有全部功能与行为保持不变"
 }
