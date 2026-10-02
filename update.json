@@ -4,8 +4,8 @@
   "asset_name": "网易云音乐解析工具_v4.8.exe",
   "download_url": "https://github.com/jigenb123/netease-music-updates/releases/latest/download/网易云音乐解析工具_v4.8.exe",
   "page_url": "https://github.com/jigenb123/netease-music-updates/releases",
-  "size": 82726896,
-  "sha256": "6ba64894264f53d235071c6c063406d810838121dd465b32f04eaee432aaa4bf",
+  "size": 82733042,
+  "sha256": "217f55c958630cee6733d0d09e8afa0b9a88d782eec5db580ff1a598ddf92a79",
   "mandatory": false,
-  "changelog": "v4.8：日志安全性增强，降低日志内容被随意查看的风险；「软件更新」页文案改为「启动时自动检查更新：已开启」。原有全部功能与行为保持不变"
+  "changelog": "v4.8：更新下载更聪明——下载更新包前先并行实测各下载通道速度，优先选择最快的镜像，最快通道不可用或中途失败时自动按速度顺序降级到次优通道，测速失败的通道留在队尾兜底；「检查更新」拉取更新信息时同样先挑最快通道，国内网络下不再干等超时。另外日志安全性增强；「软件更新」页文案改为「启动时自动检查更新：已开启」。原有全部功能与行为保持不变"
 }
